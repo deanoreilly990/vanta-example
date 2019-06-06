@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="three.min.js"></script>
+        <script src="vanta.waves.min.js"></script>
+        <script src="vanta.birds.min.js"></script>
+        
+    <style>
+        div {
+                height: 360px; margin-bottom: 10px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div id="element"> </div>
+        <div id="element2"> </div>
+        <div id = "element3"></div>
+    
+    
+    
+    </body>
+    <script>
+    // example 1
+VANTA.WAVES('#element3')
+
+// example 2
+VANTA.WAVES({
+  el: '#element2',
+  color: 0x111111,
+  waveHeight: 20,
+  shininess: 50,
+  waveSpeed: 1.5,
+  zoom: 0.75
+})
+VANTA.BIRDS({
+  el: "#element"
+})      
+    
+    
+    </script>
+</html>
